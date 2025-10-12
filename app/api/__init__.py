@@ -1,5 +1,5 @@
 """API routing package."""
 
-from .routes import router
+from .root_router import root_router
 
-__all__ = ("router",)
+__all__ = ("root_router",)

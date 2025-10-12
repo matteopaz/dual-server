@@ -2,10 +2,9 @@
 
 from fastapi import APIRouter
 
-router = APIRouter()
+root_router = APIRouter()
 
-
-@router.get("/", summary="Service health probe")
-async def read_root() -> dict[str, str]:
+@root_router.get("/ping", summary="Service health probe")
+async def pong() -> dict[str, str]:
     """Return a simple heartbeat response."""
     return {"message": "pong"}
