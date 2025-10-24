@@ -12,3 +12,6 @@ wheels/
 # Testing Cache
 .pytest_cache
 
+# Test images
+
+.png
